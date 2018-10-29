@@ -6,3 +6,24 @@
     background: url(https://lh4.googleusercontent.com/proxy/UOhQwfclsAK8TnXZqoTkh9szHvYOJ3auDH07hZBZeVaaRWvzGaXpaYl60MfCRuW_S57gvzBw859pj5Xl2pW_GpfG8k2GhE9LUFNKwA=w3840-h2160-p-k-no-nd-mv);
     background-size: cover;
 }
+
+/****** Homepage links wrapper ********/
+.homepage-links-wrapper {
+    padding-top: 200px;
+    width: 500px;
+    margin: 0 auto;
+}
+.home-page-link {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+}
+.home-page-link > div, .home-page-link > p {
+    display: inline-block;
+}
+.home-page-link > div {
+    border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+}

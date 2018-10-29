@@ -12,7 +12,7 @@ class Homepage extends React.Component {
     render () {
 
         return <div className="homepage-wrapper">
-
+            
             <Logo
                 src="https://www.google.lk/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png"
                 alt="Logo"

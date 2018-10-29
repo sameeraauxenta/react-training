@@ -2,6 +2,9 @@ import React, { Fragment }  from 'react';
 import ShortCut from './ShortCut';
 import AddShortCutModal from './AddShortCutModal';
 
+/** 
+ * Class representing ShortCuts statefull component.
+ */
 class ShortCuts extends React.Component {
 
     state={
@@ -12,27 +15,28 @@ class ShortCuts extends React.Component {
         isModalVisible: false
     }
 
+    /**
+     * On click event hander
+     */
     handleModalVisibility = () => {
         this.setState({
             isModalVisible: true
-        })
+        });
     }
 
     render() {
 
         const { shortCuts, isModalVisible } = this.state;
 
+        // Pay attention to Fragment component.
         return <Fragment>
             <div>
                 {shortCuts.map((item, index) => <ShortCut name={item.name}  url={item.url} icon={item.icon} alt={item.name} key={index} />)}
-
                 <button onClick={this.handleModalVisibility}>Add</button>
-        
             </div>
             {isModalVisible && <AddShortCutModal />}
         </Fragment>
     }
 }
-
 
 export default ShortCuts;
